@@ -16,6 +16,9 @@ dbConnect() ;
 const app = express() ; 
 app.use(express.json()) ; 
 app.use(cors()) ; 
+app.get('/', (req,res)=> {
+    res.send("<h1>This is the backend server for swagg, welcome</h1>");
+})
 app.use('/api/testapi', testapi.router) ; 
 app.use('/api/auth', auth.router ) ; 
 app.use('/api/users', user.router);
