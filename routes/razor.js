@@ -12,7 +12,7 @@ const razorInstance  = new razorpay({
 const router = Router() ; 
 
 router.post("/order",(req,res)=>{
-  const amountu = 1000;
+  const amountu = req.amount ;
   const payment_capture = 0 ; 
     try{
       const options ={

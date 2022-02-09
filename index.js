@@ -24,7 +24,7 @@ app.use('/api/auth', auth.router ) ;
 app.use('/api/users', user.router);
 app.use('/api/products', product.router);
 app.use('/api/orders', order.router);
-app.use('/api/cart',cart.router);
+app.use('/api/cart',cart.router);   
 app.use('/api/checkout/',razor.router);
 
 
