@@ -12,6 +12,9 @@ import cors from 'cors' ;
 
 dbConnect() ; 
 
+const corsOptions = {
+    origin: [process.env.ALLOWED_CLIENTS.split(',')],
+}
 
 const app = express() ; 
 app.use(express.json()) ; 
